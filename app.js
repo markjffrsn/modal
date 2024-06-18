@@ -5,7 +5,6 @@ const btns = document.querySelectorAll(".btn");
 btns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     const currentButton = e.currentTarget.classList;
-    console.log(currentButton);
 
     if (currentButton.contains("close-btn")) {
       backDrop.style.display = "none";
