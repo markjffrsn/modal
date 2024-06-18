@@ -4,10 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Modal</title>
   </head>
   <body>
-    <h1>Lorem, ipsum.</h1>
+    <div class="modal-backdrop">
+      <div class="modal-wrapper">
+        <div class="modal-header">
+          <h1>Modal Content</h1>
+          <button class="close-btn">
+            <svg
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="1.35355"
+                y1="0.646447"
+                x2="23.981"
+                y2="23.2739"
+                stroke="black"
+              />
+              <line
+                x1="0.646447"
+                y1="23.2739"
+                x2="23.2739"
+                y2="0.646441"
+                stroke="black"
+              />
+            </svg>
+          </button>
+        </div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+          voluptas fugiat soluta perspiciatis unde quis rerum velit mollitia
+          vero omnis.
+        </p>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-body">
+        <h1>Modal Project</h1>
+      </div>
+      <button class="open-btn">
+        <span>OPEN</span>
+        <svg
+          width="25"
+          height="25"
+          viewBox="0 0 25 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M13 4H1V24H21V12.5" stroke="black" />
+          <path d="M8.5 16.5L24 1M24 1H16.5M24 1V8.5" stroke="black" />
+        </svg>
+      </button>
+    </div>
 
     <script src="app.js"></script>
   </body>

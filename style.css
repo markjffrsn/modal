@@ -1,5 +1,110 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Roboto", system-ui, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.modal-backdrop {
+  display: none;
+  padding-inline: 1.25rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: hsla(146, 50%, 36%, 0.3);
+  place-items: center;
+}
+
+.modal-wrapper {
+  max-width: 500px;
+  padding: 2rem 2rem;
+  position: relative;
+  background-color: white;
+  color: black;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+.modal-wrapper button {
+  display: grid;
+  place-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.modal {
+  width: min(500px, 100%);
+  margin-inline: auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+@media (width <= 600px) {
+  .modal {
+    width: calc(100% - 2.25rem);
+  }
+}
+
+.modal-body {
+  padding: 2rem 3rem 0;
+}
+
+.modal-body h1 {
+  margin-bottom: 1.5rem;
+}
+
+.modal button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 0;
+  border-top: 1px solid black;
+  padding-block: 1rem;
+  background-color: transparent;
+}
+
+.modal button:hover {
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+}
+
+.modal button:hover svg path {
+  stroke: white;
 }
