@@ -1,5 +1,3 @@
-const closeBtn = document.querySelector(".close-btn");
-const openBtn = document.querySelector(".open-btn");
 const backDrop = document.querySelector(".modal-backdrop");
 const modalWrapper = document.querySelector(".modal");
 const btns = document.querySelectorAll(".btn");
